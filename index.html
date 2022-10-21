@@ -64,7 +64,7 @@
         <div class="container">
           <div class="hero-container">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="primary-button">
+            <button type="button" class="primary-button" data-modal-open>
               Замовити послугу
             </button>
           </div>
@@ -145,25 +145,40 @@
           <h2 class="section-title centered">Чим ми займаємося</h2>
           <ul class="work-list list">
             <li>
-              <img
-                src="./images/img1.jpg"
-                alt="Людина працює за комп'ютером"
-                width="370"
-              />
+              <div class="work-card">
+                <img
+                  src="./images/img1.jpg"
+                  alt="Людина працює за комп'ютером"
+                  width="370"
+                />
+                <div class="work-description">
+                  <h3 class="title">Десктопні додатки</h3>
+                </div>
+              </div>
             </li>
             <li>
-              <img
-                src="./images/img2.jpg"
-                alt="Людина сидить за комп'ютером та дивиться в мобільний телефон"
-                width="370"
-              />
+              <div class="work-card">
+                <img
+                  src="./images/img2.jpg"
+                  alt="Людина сидить за комп'ютером та дивиться в мобільний телефон"
+                  width="370"
+                />
+                <div class="work-description">
+                  <h3 class="title">Мобільні додатки</h3>
+                </div>
+              </div>
             </li>
             <li>
-              <img
-                src="./images/img3.jpg"
-                alt="Людина сидить за комп'ютером та звіряється з планшетом"
-                width="370"
-              />
+              <div class="work-card">
+                <img
+                  src="./images/img3.jpg"
+                  alt="Людина сидить за комп'ютером та звіряється з планшетом"
+                  width="370"
+                />
+                <div class="work-description">
+                  <h3 class="title">Дизайнерські рішення</h3>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -441,5 +456,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-clouse-button" type="button" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
